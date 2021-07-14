@@ -1,0 +1,14 @@
+* {
+    background-color: tan;
+}
+
+h1 {
+    font-size: 6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: purple;
+}
+
+ul {
+    list-style: disc;
+    margin: 1rem;
+}
