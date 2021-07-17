@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+/* All HTML elements are by default either Block level element or Inline element. */
+
+div {
+  border: 1px solid black;
+  padding: 25px;
+  margin: 25px;
+/*   float: right; */
+}
+
+/* #div1 {
+  width: 300px;
+  background-color: green;
+} */
+
+/* .brick.road {
+  background-color: green;
+} */
+
+.brick {
+  background-color: yellow;
+}
+
+/*  In class I tried :first-child here. but it didn't work. 
+    That is because the <h1> is the first child of <main>.
+    The <div> is the second child, or the first div.
+    So I can use first-of-type. */
+div:first-of-type {
+  background-color: red;
+}
+
+
+h1 {
+  background-color: pink;
+  font-size: 3rem;
+/*   text-align: center; */
+  margin: 0 auto;
+  width: max-content;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  border: 1px solid black;
+  padding: 25px;
+  margin: 25px;
+/*   clear: both; */
+}
+
+
+
+
+
+span {
+  color: red;
+  font-size: 2rem;
+}
