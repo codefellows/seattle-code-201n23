@@ -2,12 +2,13 @@
 
 let myFavColors = ['blue', 'cream', 'gold'];
 let userResponse = 'cream';
+let guessIsCorrect = false;
 
 // While Loop
 
 let attemptsRemaining = 3;
 
-while (attemptsRemaining) {
+while (attemptsRemaining && !guessIsCorrect) {
   for (let i = 0; i < myFavColors.length; i++) {
     if (userResponse === myFavColors[i]) {
       console.log('You are correct!');
