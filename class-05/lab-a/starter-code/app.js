@@ -13,7 +13,7 @@ function sum(a, b) { //eslint-disable-line
   let message = `The sum of ${a} and ${b} is ${sums}.`;
   console.log(sums, message);
   return [sums, message];
-}
+} 
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
