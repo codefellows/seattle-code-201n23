@@ -54,7 +54,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here
+
 function sumAndMultiply(a,b,c) { //eslint-disable-line
         let sums3 = sum(sum(a,b)[0],c)[0];
         let multi = multiply(multiply(a,b)[0],c)[0];
