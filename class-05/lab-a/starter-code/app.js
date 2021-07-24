@@ -58,14 +58,14 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   total = sum(total[0], c);
   let product = multiply(a, b);
   product = multiply(product[0], c)
-  let sumMessage = `${a} and ${b} and ${c} sum to ${total}.`
-  let productMessage = `The product of ${a} and ${b} and ${c} is ${product}.`
-  console.log(sum, product, sumMessage, productMessage);
-  return [sum, product, sumMessage, productMessage];
+  let sumMessage = `${a} and ${b} and ${c} sum to ${total[0]}.`
+  let productMessage = `The product of ${a} and ${b} and ${c} is ${product[0]}.`
+  console.log(`total = ${total[0]}, product =  ${product[0]}, ${sumMessage}, ${productMessage}`);
+  return [total[0], product[0], sumMessage, productMessage];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// sumAndMultiply(4,7,5);
+sumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -91,14 +91,14 @@ function sumArray(sumArr) { //eslint-disable-line
       total = sum(sumArr[i], total[0]);
     }
   }
-  let message = `${testArray.join()} was passed in as an array of numbers, and ${total} is their sum.`
-  console.log(total, message);
-  return [total, message]
+  let message = `${testArray.join()} was passed in as an array of numbers, and ${total[0]} is their sum.`
+  console.log(`total = ${total[0]}, ${message}`);
+  return [total[0], message]
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// sumArray(testArray);
+sumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -123,7 +123,7 @@ function multiplyArray(multArr) { //eslint-disable-line
     }
   }
   let message = `The numbers ${testArray.join()} have the product of ${total[0]}.`
-  console.log(total[0], message);
+  console.log(`total = ${total[0]}, ${message}`);
   return [total[0], message]
 }
 
@@ -161,7 +161,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     }
   }
   let message = `The numbers ${dynamicArray.join()} have the product of ${total[0]}.`
-  console.log(total[0], message);
+  console.log(`total = ${total[0]}, ${message}`);
   return [total[0], message]
 }
 
