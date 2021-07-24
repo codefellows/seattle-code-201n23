@@ -7,17 +7,16 @@ Write a function called sum() that takes in two numbers as arguments and then re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
-// Write your code here
-function sum(a, b) { //eslint-disable-line
-  let sums = a + b;
-  let message = `The sum of ${a} and ${b} is ${sums}.`;
-  console.log(sums, message);
-  return [sums, message];
+// // Write your code here
+function sum(a, b, c) { //eslint-disable-line
+  let sums = a + b + c ;
+  // console.log(sums);
+  return sums;
 }
 
-// Here is the test for sum(); uncomment it to run it
+// // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
-// Question 1 As we demo'd it in class.
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -29,12 +28,12 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
-function multiply(a, b) { //eslint-disable-line
-  let multiplies = a * b;
-  let message2 = `The product of ${a} and ${b} is ${multiplies}.`
-  console.log(multiplies,message2);
-  return [multiplies,message2];
+
+// // Write your code here
+function multiply(a, b, c) { //eslint-disable-line
+  let multiplies = a * b * c;
+  // console.log(multiplies);
+  return multiplies;
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -55,11 +54,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  let sum3 = sum(a,b,c);
+  // console.log (sum3);
+  let multiply3 = multiply(a,b,c);
+  // console.log (multiply3);
+  let message1 = `${a} and ${b} and ${c} sum to ${sum3}.`;
+  let message2 = `The product of ${a} and ${b} and ${c} is ${multiply3}.`;
+  // console.log (sum3,multiply3,message1, message2);
+  return [sum3, multiply3, message1, message2];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -76,9 +82,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
-
-}
+// function sumArray(sumArr) { //eslint-disable-line
+//   let sum4 = sum(testarray[0],testarray[1],testarray[2]);
+//   let message 4 = '2,3,4 was passed in as an array of numbers, and 9 is their sum.'
+//   console.log ()
+// }
 
 // Here is the test for sumArray(); uncomment it to run it
 
