@@ -11,7 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { 
     let sums = (a + b);
     let message = `The sum of ${a} and ${b} is ${sums}.`;
-    console.log(sums,message);
+    // console.log(sums,message);
     return [sums,message];
     
 }
