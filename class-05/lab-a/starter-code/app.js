@@ -8,12 +8,12 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-// function sum(a, b) { //eslint-disable-line
-//   let sums = a + b;
-//   let message = `The sum of ${a} and ${b} is ${sums}.`;
-//   console.log(sums, message);
-//   return [sums, message];
-// }
+function sum(a, b) { //eslint-disable-line
+  let sums = a + b;
+  // let message = `The sum of ${a} and ${b} is ${sums}.`;
+  // console.log(sums);
+  return sums;
+}
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -30,14 +30,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-  let sums = a * b;
-  let message = `The product of ${a} and ${b} is ${sums}.`;
-  console.log(sums, message);
-  return [sums, message];
+  let product = a * b;
+  // let message = `The product of ${a} and ${b} is ${sums}.`;
+  // console.log(sums, message);
+  return product;
 }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
+// testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -53,12 +53,27 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let tempSum = sum(a, b);
+  let finalSum = sum(tempSum, c);
+  console.log(finalSum);
 
+  let tempProduct = multiply(a, b);
+  let finalProduct = multiply(tempProduct, c);
+  console.log(finalProduct);
+
+ 
+  let messageOne = `${a} and ${b} and ${c} sum to ${finalSum}.`;
+  console.log(messageOne);
+  
+  let messageTwo = `The product of ${a} and ${b} and ${c} is ${finalProduct}.`;
+  console.log(messageTwo);
+
+  return [finalSum, finalProduct, messageOne, messageTwo];
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
