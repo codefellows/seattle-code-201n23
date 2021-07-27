@@ -154,15 +154,11 @@ let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   let total = 1
   for (let i =0; i < dynamicArray.length; i++) {
-    if  (total === 1)  {
-      total = multiply(dynamicArray[i], total); 
-    } else {
-      total = multiply(dynamicArray[i], total[0]);
-    }
+      total = multiply(dynamicArray[i], total)[0]; 
   }
-  let message = `The numbers ${dynamicArray.join()} have the product of ${total[0]}.`
-  console.log(`total = ${total[0]}, ${message}`);
-  return [total[0], message]
+  let message = `The numbers ${dynamicArray.join()} have the product of ${total}.`
+  console.log(`total = ${total}, ${message}`);
+  return [total, message]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
