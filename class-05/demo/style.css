@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  	border: 15px solid red;
+  /*    top    right/left    bottom
+  border-width: 2px 100px 20px; */
+  	width: 80%;
+  /*       top.  right  bottom left  */
+ 	margin: 5rem auto auto auto;
+  height: 40rem;
+}
+
+div div {
+  border: medium solid black;
+  margin: 1rem;
+  padding: 1rem;
+  width: max-content;
+  position: fixed;
+ 
+}
+
+ /* position: relative — relative to its original positoin */
+ 
+/* position: absolute —relative to the  positoin of it's most recent ancestor with "position: relative" set*/
+
+/* position: fixed — relative to the browser window, will not move when you scroll down the page */
+
+section > div {
+  border: 2px dashed black;
+}
+
+#three {
+  left: 5rem;
+  top: 3rem;
+}
+
+#two {
+  left: 5rem;
+}
+
+#one {
+  left: 5rem;
+  top: 10rem
+}
+
+div:nth-child(2) {
+  background-color: green;
+}

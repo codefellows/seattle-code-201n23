@@ -1,0 +1,72 @@
+
+/* --- defaults --- */
+div {
+  border: 1px solid black;
+}
+
+div div {
+  background-color: lightgray;
+  margin: .5rem;
+}
+
+/* --- Vertical and Horizontal Centering --- */
+
+.centering-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centering-container div {
+  width: 10rem;
+}
+
+/* --- Space Around --- */
+
+.space-around-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.space-around-container div {
+  width: 10rem;
+}
+
+/* --- Flex Wrap --- */
+
+.flex-wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-wrap-container {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.no-wrap-container div,
+.flex-wrap-container div {
+  flex-basis: 31%;
+}
+
+/* --- Shrink & Grow --- */
+
+.shrink-and-grow-container {
+  display: flex;
+}
+
+.shrink-and-grow-container div {
+  flex-grow: 1;
+}
+
+.shrink-and-grow-container div:nth-child(4) {
+  flex-grow: 3;
+  background-color: pink;
+}
+
+.shrink-and-grow-container div:nth-child(2) {
+  flex-shrink: 1;
+  flex-grow: 0;
+  background-color: lightgreen;
+}
