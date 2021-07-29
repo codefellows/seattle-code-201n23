@@ -35,7 +35,7 @@ img.src = 'images/jumper.jpeg';
 img.alt = "Jumper is available for adoption.";
 article.appendChild(img);
 
-const jumperLikes = document.getElementById('jumperLikes');
+
 
 let jumper = {
   name: 'Jumper',
@@ -48,6 +48,5 @@ let jumper = {
     }
   }
 }
-
 jumper.render();
 
