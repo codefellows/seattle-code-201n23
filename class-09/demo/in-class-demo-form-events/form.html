@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Forms</title>
+  <link rel="stylesheet" href="css/form-styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Events with forms</h1>
+  </header>
+  <main>
+    <form id='form'>
+      <fieldset>
+        <legend>User Info</legend>
+        <label for='firstName'>First Name</label>
+        <input type="text" id="firstName" placeholder="first name" name="firstname">
+
+        <label>Last Name
+          <input type="text" name="lastName">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>All about pets</legend>
+        <p>Did you have a pet as a child?</p>
+        <label>Yes
+          <input type="radio" name="childhoodPet" value="yes">
+        </label>
+        <label>No
+          <input type="radio" name="childhoodPet" value="no">
+        </label>
+
+        <p>Which types of pets have you had if any?</p>
+        <label>Dog
+          <input type="checkbox" name="hadADog" value="dog">
+        </label>
+        <label>Cat
+          <input type="checkbox" name="hadACat" value="cat">
+        </label>
+        <label>Fish
+          <input type="checkbox" name="hadAFish" value="fish">
+        </label>
+        <label>Hamster
+          <input type="checkbox" name="hadAHamster" value="hamster">
+        </label>
+
+        <label for="pets">What is your favorite pet type?</label>
+        <select name='favPet' id="pets">
+          <option value="" disabled selected>--Select Pet--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="fish">Fish</option>
+          <option value="chincilla">chincilla</option>
+        </select>
+      </fieldset>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <script src="js/form.js"></script>
+</body>
+
+</html>
