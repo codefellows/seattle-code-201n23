@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: cornsilk;
+  color:saddlebrown;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rosybrown;
+}
+
+header {
+  width: 900px;
+  margin: 2rem auto 1rem;
+}
+
+main {
+  width: 900px;
+  margin: 0 auto 2rem;
+}
+
+ul li {
+  line-height: 160%;
+}
+
+/* -- VOTING BLOCK -- */
+
+section {
+  background-color: rgba(211, 187, 176, 0.3);
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+section img {
+  width: 35%;
+  margin: 1rem;
+  border: 5px solid transparent;
+}
+
+section img:hover {
+  border: 5px solid rgb(169, 108, 28);
+  cursor: pointer;
+}
+
+/* -- button -- */
+
+section + div {
+  background-color: rgba(128, 128, 128, 0.734);
+  color: lightgrey;
+  padding: .5rem 1rem;
+  width: max-content;
+  font-size: .8rem;
+  pointer-events: none;
+}
+
+section + div.clicks-allowed {
+  background-color: rosybrown;
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+section + div.clicks-allowed:hover {
+  background-color: rgb(211, 187, 175)
+}
