@@ -48,6 +48,13 @@ section img:hover {
   cursor: pointer;
 }
 
+/*-- CHART  -- */
+
+canvas {
+  max-width: 500px;
+  max-height: 300px;
+  margin: auto;
+}
 
 /* -- BUTTON -- */
 
