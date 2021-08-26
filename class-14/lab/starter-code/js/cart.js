@@ -19,7 +19,10 @@ function renderCart() {
 }
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
-function clearCart() {}
+function clearCart() {
+  // target the tbody and use innerHTML = ''
+
+}
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
@@ -38,6 +41,8 @@ function removeItemFromCart(event) {
   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
   // TODO: Save the cart back to local storage
   // TODO: Re-draw the cart table
+
+  // .slice() remove specific index from the cartItems array? Maybe rerender?
 
 }
 
